@@ -13,6 +13,7 @@ class TodoListController extends Controller
             'todo' => 'required'
         ]);
 
+
         $todo = TodoList::create([
             'todo' => $validatedData['todo'],
             'user_id' => Auth::user()->id
