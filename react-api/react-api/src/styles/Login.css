@@ -1,0 +1,63 @@
+body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    text-align: center;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login h2 {
+    font-size: 4rem;
+    margin: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login-form input {
+    width: 20rem;
+    height: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.login-form button { 
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid hsl(0, 0%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 8px;
+    transition: background-color 0.5s ease;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.login-form button:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.login-form .forgot-password {
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.login-form .register-here {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+}

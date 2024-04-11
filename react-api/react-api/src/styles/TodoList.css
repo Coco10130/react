@@ -1,0 +1,108 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+.container {
+    flex-direction: column;
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+    width: 80%;
+}
+
+.container h2 {
+    font-size: 4rem;
+    margin: 20px;
+    font-family: 'Noto Sans JP';
+    margin: 50px 0px;
+}
+
+.container ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+    transition: box-shadow 0.4s ease;
+}
+
+.container ul li:hover {
+    background-color: hsl(0, 0%, 90%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .input-todo input {
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container .input-todo button {
+    padding: 5px 20px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
+    background-color: hsl(247, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    transition: background-color 0.5s ease;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container .input-todo button:hover {
+    background-color: hsl(247, 100%, 40%);
+}
+
+.container ul li .text {
+    font-size: 1.3rem;
+}
+
+.buttons .delete-btn,
+.buttons .up-btn,
+.buttons .down-btn {
+    font-size: 1.3rem;
+    font-family: Oswald;
+    border: none;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.buttons .delete-btn {
+    background-color: hsl(0, 90%, 60%);
+}
+
+.buttons .delete-btn:hover {
+    background-color: hsl(0, 90%, 50%);
+}
+
+.buttons .up-btn,
+.buttons .down-btn {
+    background-color: hsl(250, 100%, 50%);
+}
+
+.buttons .up-btn:hover,
+.buttons .down-btn:hover {
+    background-color: hsl(250, 100%, 40%);
+}
+
+.invalid-feedbacks {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
