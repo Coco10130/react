@@ -4,6 +4,7 @@ import Register from "./views/Register";
 import GuestLayout from "./components/GuestLayout";
 import DefaultLayout from "./components/DefaultLayout";
 import TodoList from "./views/TodoList";
+import Notes from "./views/Notes";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
             {
                 path: "/todos",
                 element: <TodoList />,
+            },
+            {
+                path: "/notes",
+                element: <Notes />,
             },
         ],
     },
