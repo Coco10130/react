@@ -61,7 +61,6 @@ function TodoList() {
             setTasks(updatedTasks);
 
             try {
-                // Send a request to update the order of tasks in the backend
                 await AxiosClient.put(`/updateTodoOrder/${tasks[index].id}`, {
                     order: index - 1,
                 });
@@ -98,6 +97,7 @@ function TodoList() {
     }
 
     useEffect(() => {
+        document.title = `Todos`;
         async function fetchTasks() {
             try {
                 const response = await AxiosClient.get("/showTodo");

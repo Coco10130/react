@@ -41,13 +41,31 @@ header .user-info {
     margin: 15px;
 }
 
-.header-text .header,
+.header-text .todo,
+.header-text .notes,
 .user-info .user {
     font-size: 2rem;
     margin: 10px;
     font-family: 'Oswald';
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s ease;
+}
+
+.header-text .todo:hover,
+.header-text .notes:hover {
+    border-bottom: 5px solid hsl(0, 0%, 10%);
+}
+
+.active {
+    border-bottom: 5px solid hsl(0, 0%, 10%);
 }
 
 .user-info .btn {
     font-family: 'Oswald';
+}
+
+.header-text .todo a,
+.header-text .notes a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
 }

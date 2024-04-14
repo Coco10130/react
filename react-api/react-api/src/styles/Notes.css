@@ -1,0 +1,14 @@
+.container-fluid {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 90%);
+    padding: 0 50px;
+}
+
+.notes-title {
+    font-size: 4rem;
+    width: 73vw;
+    border-bottom: 2px solid hsl(0, 0%, 10%);
+    text-align: start;
+    padding: 10px;
+    font-family: 'Oswald';
+}

@@ -28,6 +28,10 @@ class User extends Authenticatable
         return $this.hasOne(TodoList::class);
     }
 
+    public function notes(){
+        return $this.hasMany(Notes::class);
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *

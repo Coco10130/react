@@ -1,0 +1,104 @@
+.note-container {
+    width: 80vw;
+    padding: 30px;
+}
+
+.card-body {
+    width: 18rem;
+    background-color: hsla(123, 87%, 48%);
+    padding: 20px;
+    border-radius: 20px;
+    height: 19.5rem;
+    transition: 0.5s ease;
+}
+
+.card-body:hover {
+    transform: scale(1.1);
+}
+
+.note-content .card-text {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: 100%;
+    padding: 10px 10px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1.2rem;
+    direction: ltr;
+}
+
+.card-button .save-btn {
+    font-family: 'Oswald';
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 100%);
+    width: 3.3rem;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.card-button .card-date {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.sidebar {
+    padding: 10px;
+}
+
+.content-container {
+    margin-left: 110px;
+}
+
+.red,
+.blue,
+.green,
+.orange {
+    border: none;
+    margin: 5px 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.red {
+    background-color: #ff0000cc;
+}
+
+.blue {
+    background-color: #4000ffcc;
+}
+
+.green {
+    background-color: #00ff1ecc;
+}
+
+.orange {
+    background-color: #ffa500;
+}
+
+.note-content {
+    height: 14rem;
+    width: 15.5rem;
+}
+
+.note-content.editable:focus {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.card-loading,
+.card-is-empty {
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 5rem;
+}
+
+.delete-note {
+    border: none;
+    padding: 2px 10px;
+    font-size: 1.1rem;
+    font-family: "Oswald";
+}
