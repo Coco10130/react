@@ -31,7 +31,7 @@ function Login() {
     return (
         <div className="login-container">
             <div className="login">
-                <h2>Login</h2>
+                <h2 className="login-text">Login</h2>
                 <form onSubmit={Submit} className="login-form">
                     <input
                         type="text"
@@ -46,7 +46,10 @@ function Login() {
                     />{" "}
                     <br />
                     <p className="forgot-password">forgot password</p>
-                    <button type="submit" className="login-button">
+                    <button
+                        type="submit"
+                        className="login-button btn btn-outline-secondary"
+                    >
                         Login
                     </button>
                     <p className="register-here">

@@ -17,42 +17,57 @@ body {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 10%);
 }
 
-.register h2 {
-    font-size: 4rem;
+.register .register-text {
+    color: hsl(0, 0%, 95%) !important;
+    font-size: 3rem;
     margin: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oswald';
 }
 
 .register-form input {
     width: 20rem;
     height: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins';
     padding: 10px;
-    border: 1px solid hsl(0, 0%, 20%);
-    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
     margin: 10px;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 95%) !important;
+    transition: border-color 0.5s ease;
+}
+
+.register-form input::placeholder {
+    color: hsl(0, 0%, 90%);
+}
+
+.register-form input:focus {
+    border-color: hsl(255, 92%, 76%) !important;
+    outline: none;
+    box-shadow: 0 0 10px hsl(255, 92%, 76%);
+    transition: border-color 0.5s ease, box-shadow 0.3s ease;
 }
 
 .register-form button {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Oswald';
     border: 1px solid hsl(0, 0%, 50%);
     background-color: hsl(0, 0%, 100%);
-    padding: 8px;
+    padding: 5px 10px;
     transition: background-color 0.5s ease;
     margin-top: 20px;
     cursor: pointer;
     font-size: 1.2rem;
-}
-
-.register-form button:hover {
-    background-color: hsl(0, 0%, 90%);
+    border-radius: 10px;
 }
 
 .register-form .login-here {
+    color: hsl(0, 0%, 95%) !important;
     margin-top: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins';
     font-size: 0.8rem;
     cursor: pointer;
 }

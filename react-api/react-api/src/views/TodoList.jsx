@@ -131,9 +131,9 @@ function TodoList() {
                 )}
                 <ul>
                     {isLoading ? (
-                        <div class="loader-container">
-                            <div class="loader"></div>
-                            <div class="loader-text">Loading...</div>
+                        <div className="loader-container">
+                            <div className="loader"></div>
+                            <div className="loader-text">Loading...</div>
                         </div>
                     ) : tasks.length === 0 ? (
                         <p className="card-is-empty">Todo List is empty</p>

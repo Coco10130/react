@@ -34,7 +34,7 @@ function Register() {
     return (
         <div className="reigster-container">
             <div className="register">
-                <h2>Register</h2>
+                <h2 className="register-text">Register</h2>
 
                 <form onSubmit={Submit} className="register-form">
                     <input
@@ -56,7 +56,9 @@ function Register() {
                     />{" "}
                     <br />
                     <br />
-                    <button className="register-button">Register</button>
+                    <button className="register-button btn btn-outline-secondary">
+                        Register
+                    </button>
                     <p className="login-here">
                         Already have an account? <Link to="/login">Login</Link>
                     </p>

@@ -14,50 +14,65 @@ body {
 .login {
     text-align: center;
     border: 1px solid hsl(0, 0%, 20%);
-    border-radius: 10px;
     padding: 20px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 10%);
 }
 
-.login h2 {
-    font-size: 4rem;
+.login .login-text {
+    color: hsl(0, 0%, 95%) !important;
+    font-size: 3rem;
     margin: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oswald';
 }
 
 .login-form input {
     width: 20rem;
     height: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins';
     padding: 10px;
-    border: 1px solid hsl(0, 0%, 20%);
-    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
     margin: 10px;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 95%) !important;
+    transition: border-color 0.5s ease;
+}
+
+.login-form input::placeholder {
+    color: hsl(0, 0%, 90%);
+}
+
+.login-form input:focus {
+    border-color: hsl(255, 92%, 76%) !important;
+    outline: none;
+    box-shadow: 0 0 10px hsl(255, 92%, 76%);
+    transition: border-color 0.5s ease, box-shadow 0.3s ease;
 }
 
 .login-form button { 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Oswald';
     border: 1px solid hsl(0, 0%, 50%);
     background-color: hsl(0, 0%, 100%);
-    padding: 8px;
+    border-radius: 10px;
+    padding: 5px 10px;
     transition: background-color 0.5s ease;
     margin-top: 20px;
     cursor: pointer;
     font-size: 1.2rem;
 }
 
-.login-form button:hover {
-    background-color: hsl(0, 0%, 90%);
-}
-
 .login-form .forgot-password {
+    color: hsl(0, 0%, 95%) !important;
     text-align: end;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins';
     cursor: pointer;
 }
 
 .login-form .register-here {
+    color: hsl(0, 0%, 95%) !important;
     margin-top: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins';
     font-size: 0.8rem;
     cursor: pointer;
 }

@@ -153,9 +153,11 @@ function Card({ onCardCreate }) {
                     <div className="col content-container">
                         <div className="row">
                             {isLoading ? (
-                                <div class="loader-container">
-                                    <div class="loader"></div>
-                                    <div class="loader-text">Loading...</div>
+                                <div className="loader-container">
+                                    <div className="loader"></div>
+                                    <div className="loader-text">
+                                        Loading...
+                                    </div>
                                 </div>
                             ) : cards.length === 0 ? (
                                 <p className="card-is-empty">Notes is empty</p>
