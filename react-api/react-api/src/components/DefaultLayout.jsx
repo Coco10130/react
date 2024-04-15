@@ -35,21 +35,13 @@ function DefaultLayout() {
 
     return (
         <div id="default-layout">
-            <div className="content">
+            <div className="contentt">
                 <header>
                     <div className="header-text d-flex align-items-center justify-content-center">
-                        <p
-                            className={`todo ${
-                                isActive("/todos") ? "active" : ""
-                            }`}
-                        >
+                        <p className="todo">
                             <Link to={"/todos"}>Todo List</Link>
                         </p>
-                        <p
-                            className={`notes ${
-                                isActive("/notes") ? "active" : ""
-                            }`}
-                        >
+                        <p className="notes">
                             <Link to={"/notes"}>Notes</Link>
                         </p>
                     </div>

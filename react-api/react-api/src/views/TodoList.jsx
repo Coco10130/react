@@ -5,6 +5,7 @@ import AxiosClient from "../AxiosClient";
 function TodoList() {
     const [tasks, setTasks] = useState(["basta"]);
     const [newTask, setNewTask] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
     const [errorMessage, setErrorMessage] = useState("");
 
     function handleOnChange(e) {
@@ -104,6 +105,8 @@ function TodoList() {
                 setTasks(response.data);
             } catch (error) {
                 console.error("Error fetching tasks:", error);
+            } finally {
+                setIsLoading(false);
             }
         }
 
@@ -127,32 +130,41 @@ function TodoList() {
                     <div className="invalid-feedbacks">{errorMessage}</div>
                 )}
                 <ul>
-                    {tasks.map((task, index) => (
-                        <li key={index}>
-                            <span className="text">{task.todo}</span>
-                            <div className="buttons">
-                                <button
-                                    onClick={() => deleteTask(task.id)}
-                                    className="delete-btn"
-                                >
-                                    Delete
-                                </button>
+                    {isLoading ? (
+                        <div class="loader-container">
+                            <div class="loader"></div>
+                            <div class="loader-text">Loading...</div>
+                        </div>
+                    ) : tasks.length === 0 ? (
+                        <p className="card-is-empty">Todo List is empty</p>
+                    ) : (
+                        tasks.map((task, index) => (
+                            <li key={index}>
+                                <span className="text">{task.todo}</span>
+                                <div className="buttons">
+                                    <button
+                                        onClick={() => deleteTask(task.id)}
+                                        className="delete-btn"
+                                    >
+                                        Delete
+                                    </button>
 
-                                <button
-                                    onClick={() => moveTaskUp(index)}
-                                    className="up-btn"
-                                >
-                                    Up
-                                </button>
-                                <button
-                                    onClick={() => moveTaskDown(index)}
-                                    className="down-btn"
-                                >
-                                    Down
-                                </button>
-                            </div>
-                        </li>
-                    ))}
+                                    <button
+                                        onClick={() => moveTaskUp(index)}
+                                        className="up-btn"
+                                    >
+                                        Up
+                                    </button>
+                                    <button
+                                        onClick={() => moveTaskDown(index)}
+                                        className="down-btn"
+                                    >
+                                        Down
+                                    </button>
+                                </div>
+                            </li>
+                        ))
+                    )}
                 </ul>
             </div>
         </div>
